@@ -1,5 +1,5 @@
 :8443 {
- tls /srv/certs/domain-int.crt /srv/certs/domain.key
+ tls /srv/certs/domain-bundle.crt /srv/certs/domain.key
  root /srv/publics
  browse /test
 }
