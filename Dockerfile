@@ -14,7 +14,8 @@ ADD Caddyfile /etc/Caddyfile
 ADD public/ /srv/public/
 ADD publics/ /srv/publics/
 ADD certs/ /srv/certs
+ADD delay.sh /usr/bin/
 
-ENTRYPOINT ["sleep", "40"]
+ENTRYPOINT ["/usr/bin/delay.sh"]
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile"]
