@@ -15,6 +15,6 @@ ADD public/ /srv/public/
 ADD publics/ /srv/publics/
 ADD certs/ /srv/certs
 
-CMD ["sleep", "40"]
+ENTRYPOINT ["sleep", "40"]
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile"]
