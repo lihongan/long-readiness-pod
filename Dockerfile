@@ -17,5 +17,3 @@ ADD certs/ /srv/certs
 ADD delay.sh /usr/bin/
 
 ENTRYPOINT ["/usr/bin/delay.sh"]
-ENTRYPOINT ["/usr/bin/caddy"]
-CMD ["--conf", "/etc/Caddyfile"]
